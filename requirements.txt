@@ -1,0 +1,6 @@
+iisignature==0.23
+jupyter==1.0.0
+Keras==2.2.4
+esig==0.6.31
+matplotlib==2.2.4
+scikit-learn==0.20.3
