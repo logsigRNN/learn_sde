@@ -43,7 +43,7 @@ input_shape = [frame_nb, joints_dim,3]
 model = build_lin_Logsig_rnn_model(input_shape, n_hidden_neurons, output_shape, 
                                    number_of_segment, deg_of_logsig, learning_rate, drop_rate1, drop_rate2, filter_size)
 
-training_generator = DataGenerator(cha_train.reshape(-1,39,19,3), train_label, batch_size)
+training_generator = DataGenerator(cha_train.reshape(-1,frame_nb,joints_dim,3), train_label, batch_size)
 
 
 
