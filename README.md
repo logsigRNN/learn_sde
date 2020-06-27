@@ -1,7 +1,7 @@
 # Learning SDE Using Recurrent Neural Network with Log Signature Features
 Using logsignatures as features or layers in a recurrent neural network
 
-This code is for paper Learning stochastic differential equations using RNN with log signature features
+This code is for the paper: Learning stochastic differential equations using RNN with log signature features
 
 ## Directory
 1. `sde_learning`: Codes for synthetic SDE data learning
