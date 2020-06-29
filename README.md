@@ -1,4 +1,4 @@
-# Learning SDE Using Recurrent Neural Network with Log Signature Features
+# Applications of Logsig-RNN method
 Using logsignatures as features or layers in a recurrent neural network
 
 ## Directory
