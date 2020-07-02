@@ -25,7 +25,7 @@ def build_lin_Logsig_rnn_model(input_shape, n_hidden_neurons, output_shape, no_o
     lin_projection_layer = Conv2D(16,(3,1), strides=(1,1), padding='same',data_format='channels_last')(lin_projection_layer)
     reshape = Reshape((input_shape[0], 16*19))(lin_projection_layer)
 
-    lin_projection_layer = Conv1D(filter_size,1,activation='relu')(reshape)
+    lin_projection_layer = Conv1D(filter_size,1)(reshape)
     drop_layer_1 = Dropout(drop_rate_1)(lin_projection_layer)
     ps_layer = Lambda(lambda x:PS(x), output_shape=(input_shape[0],filter_size),name='partial_sum')(drop_layer_1)
     cat_layer = Lambda(lambda x:Cat_T(x,input_shape[0]), output_shape=(input_shape[0], filter_size+1),name='add_time')(ps_layer)
