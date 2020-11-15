@@ -1,25 +1,6 @@
 Learning SDE Using Recurrent Neural Network with Log Signature Features
 
 
-Introduction
-====================================
-Supported structures:
-
-    -RNN with LSTM
-    
-    -RNN
-        
-Data: synthetic SDE data
-
-
-Requirements
-====================================
-1. Python 3
-2. Keras
-3. Tensorflow
-4. iisignature
-
-
 Structure
 ====================================
 
