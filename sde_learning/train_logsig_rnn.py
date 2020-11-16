@@ -30,7 +30,7 @@ def main(prefix,
     T = maturity
     assert deg_of_logsig != 1
 
-    Y = output
+    Y = output[:, -1]
     sig_comp_time = []
     test_result = []
     test_time = []
